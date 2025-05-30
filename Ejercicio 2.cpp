@@ -5,8 +5,12 @@ int main() {
     float compra, total;
     cout << "Ingrese el monto de la compra: ";
     cin >> compra;
+    if (compra < 0) {
+        cout << "Monto invalido." << endl;
+        return 1;
+    }
     if (compra > 1000)
-        total = compra * 0.8;
+        total = compra * 0.8; 
     else
         total = compra;
     cout << "Total a pagar: " << total << endl;
