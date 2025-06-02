@@ -5,13 +5,16 @@ int main() {
     int d;
     cout << "Ingrese numero de dia (0-6): ";
     cin >> d;
-    if (d == 0) cout << "Domingo" << endl;
-    else if (d == 1) cout << "Lunes" << endl;
-    else if (d == 2) cout << "Martes" << endl;
-    else if (d == 3) cout << "Miercoles" << endl;
-    else if (d == 4) cout << "Jueves" << endl;
-    else if (d == 5) cout << "Viernes" << endl;
-    else if (d == 6) cout << "Sabado" << endl;
-    else cout << "Dia invalido" << endl;
+    
+    switch (d) {
+    	case 0 : cout << "Domingo" << endl; break;
+    	case 1 : cout << "Lunes" << endl; break;
+    	case 2 : cout << "Martes" << endl; break;
+    	case 3 : cout << "Miercoles" << endl; break;
+    	case 4 : cout << "Jueves" << endl; break;
+    	case 5 : cout << "Viernes" << endl; break;
+    	case 6 : cout << "Sabado" << endl; break;
+        default : cout << "Dia invalido" << endl; 
+	}
     return 0;
 }
