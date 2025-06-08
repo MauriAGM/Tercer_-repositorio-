@@ -5,11 +5,12 @@ int main() {
     int anio;
     cout << "Ingrese el anio: ";
     cin >> anio;
-    if (anio <= 0) {
+    //Añadio validaciones para el año
+	if (anio <= 0) {
     	cout << "Anio invalido." << endl;
         return 1;
 	}
-	
+	//Verificacion si el año es bisiesto o no
     if ((anio % 4 == 0 && anio % 100 != 0) || (anio % 400 == 0))
         cout << "Es bisiesto" << endl;
     else
